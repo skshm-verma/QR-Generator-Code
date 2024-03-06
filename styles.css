@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #2E3192, #1BFFFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    position: absolute;
+    top: 40px;
+    font-weight: 350px;
+}
+
+.container h4 {
+    position: absolute;
+    bottom: 20px
+}
+
+.text-area {
+    width: 30%;
+    height: 50%;
+    background-image: linear-gradient(to right, #02AABD, #00CDAC);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-area input {
+    border-radius: 5px;
+    border: 2px solid #0c2968;
+    padding: 5px;
+    text-align: center;
+    width: 60%;
+    height: 10%;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 25px;
+    transition: all 1s ease-out;
+    box-shadow: 1px 1px 45px 10px #02AABD, 3px 3px 45px 15px #02AABD, 5px 5px 45px 20px #02AABD;
+}
+
+#text-input:hover {
+    flex-grow: 0.2;
+    transition: all 2s ease-in-out;
+}
+
+#btn {
+    background-color: black;
+    border-radius: 8px;
+    border: 2px solid black;
+    width: 120px;
+    height: fit-content;
+    padding: 8px;
+    color: white;
+    box-shadow: 1px 1px 25px 5px rgba(182, 174, 174, 0.504), 3px 3px 35px 5px rgba(182, 174, 174, 0.504), 5px 5px 40px 5px rgba(182, 174, 174, 0.504);
+}
+
+.QR-area {
+    background-color: whitesmoke;
+    background-image: linear-gradient(to left, #02AABD, #00CDAC);
+    width: 40%;
+    min-height: 400px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#extra-text {
+    visibility: hidden;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    transition: ease-out;
+}
+
+/* Toast Styling */
+
+.toast {
+    position: fixed;
+    bottom: 25px;
+    right: 60px;
+    min-width: 300px;
+    background: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    animation: slideInRight 0.3s ease-in-out forwards,
+        fadeOut 0.5s ease-in-out forwards 3s;
+}
+
+.toast-progress {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    animation: toastProgress 3s ease-in-out forwards;
+}
+
+.toast-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toast-icon {
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 10px 0px;
+    font-size: 1.5rem;
+}
+
+.toast-message {
+    flex: 1;
+    font-size: 20px;
+    color: #000000;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.toast.toast-success {
+    background: #95eab8;
+}
+
+.toast.toast-success .toast-progress {
+    background-color: #2ecc71;
+}
+
+
+@keyframes slideInRight {
+    0% {
+        animation-delay: 3s;
+        transform: translateX(110%);
+    }
+
+    75% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes toastProgress {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+
+/* media query */
+
+@media screen and (max-width : 992px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .text-area {
+        width: 30%;
+        height: 20%;
+        background-image: linear-gradient(to right, #02AABD, #00CDAC);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .QR-area {
+        margin-top: 30px;
+        width: 50%;
+        height: 35%;
+    }
+
+    .toast {
+        position: fixed;
+        bottom: 65px;
+        right: 20px;
+    }
+
+}
+
+@media screen and (max-width : 567px) {
+
+    .QR-area {
+        margin-top: 30px;
+        width: 40%;
+        height: fit-content;
+    }
+
+    
+    .QR-area img{
+        width: 140px;
+        height: 140px;
+    }
+
+    #extra-text{
+        font-size: 1rem;
+    }
+}
