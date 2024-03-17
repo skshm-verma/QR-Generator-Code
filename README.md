@@ -19,16 +19,8 @@ Tired of manually typing out long URLs or sharing complex information? This proj
   
 **Some Visuals:**
 
-<img src="/images/visual1.png" width="320" height="240"> <video width="320" height="240" controls>
-  <source src="/images/visual2.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
-
-
+<img src="/images/visual1.png" width="350" height="200"> 
 https://github.com/skshm-verma/QR-Generator-Code/assets/106864834/6444a268-c6c7-410c-b2d1-8c0b05179e2b
-
-
 
 
 **Getting Started:**
