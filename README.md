@@ -19,7 +19,11 @@ Tired of manually typing out long URLs or sharing complex information? This proj
   
 **Some Visuals:**
 
-<img src="/images/visual1.png" width="320" height="240"> <video width="320" height="240" controls><source src="/images/visual2.mp4" type="video/mp4"></video>
+<img src="/images/visual1.png" width="320" height="240"> <video width="320" height="240" controls>
+  <source src="/images/visual2.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
 
 **Getting Started:**
 
