@@ -24,7 +24,11 @@ Tired of manually typing out long URLs or sharing complex information? This proj
   <source src="movie.ogg" type="video/ogg">
   Your browser does not support the video tag.
 </video>
-https://github.com/skshm-verma/QR-Generator-Code/blob/master/images/visual2.mp4
+
+
+https://github.com/skshm-verma/QR-Generator-Code/assets/106864834/6444a268-c6c7-410c-b2d1-8c0b05179e2b
+
+
 
 
 **Getting Started:**
