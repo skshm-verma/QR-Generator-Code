@@ -21,6 +21,11 @@ Tired of manually typing out long URLs or sharing complex information? This proj
 
 <img src="/images/visual1.png" width="350" height="200"> 
 
+<video width="320" height="240" controls>
+  <source src="/images/visual2.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+</video>
+
 https://github.com/skshm-verma/QR-Generator-Code/assets/106864834/6444a268-c6c7-410c-b2d1-8c0b05179e2b
 
 
