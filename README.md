@@ -18,7 +18,8 @@ Tired of manually typing out long URLs or sharing complex information? This proj
 - CSS (Styling and Visual Design)
   
 **Some Visuals:**
-<img src="/images/visual1.png" width="320" height="240"> <video width="320" height="240" controls><source src="/images/QR Generator Page - Google Chrome 2024-03-17 13-48-02" type="video/mp4"></video>
+
+<img src="/images/visual1.png" width="320" height="240"> <video width="320" height="240" controls><source src="/images/visual2.mp4" type="video/mp4"></video>
 
 **Getting Started:**
 
